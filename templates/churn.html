@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Churn Prediction Result</h1>
+    </header>
+
+    <main>
+        <section class="result-section">
+            <div class="result-card">
+                <h2>The predicted churn probability is:</h2>
+                <p><strong>{{ churn }}</strong>%</p>
+            </div>
+        </section>
+        <div class="navigation">
+            <a href="/recommendations" class="btn">Check Recommendations</a>
+            <a href="/form" class="btn">Back to Form</a>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Customer Churn Prediction. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Data to Predict Churn</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Predict Customer Churn</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Provide Customer Information</h2>
+            <form id="churnForm" action="/churn" method="POST">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="balance">Balance</label>
+                <input type="number" id="balance" name="balance" step="0.01" required>
+
+                <label for="active">Is an Active Member?</label>
+                <select id="active" name="active" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="num-products">Number of Products Subscribed</label>
+                <input type="number" id="num-products" name="num-products" min="0" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="submit" class="btn">Predict</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Customer Churn Prediction. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
