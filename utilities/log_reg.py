@@ -47,13 +47,12 @@ def calculateChurn(age, bal, binary_active, prod, gender_Male):
     joblib.dump(scaler, 'scaler.pkl')
 
     # Model evaluation
-    '''probs = lr.predict_proba(x_test)[:, 1]
+    probs = lr.predict_proba(x_test)[:, 1]
     print("Model Evaluation:")
     print(f"ROC-AUC Score: {roc_auc_score(y_test, probs):.2f}")
     print(f"Accuracy: {accuracy_score(y_test, lr.predict(x_test)):.2f}")
-    print(f"F1-Score: {f1_score(y_test, lr.predict(x_test)):.2f}")
 
-    # Display predicted probabilities for the first 10 test cases
+    '''# Display predicted probabilities for the first 10 test cases
     print("Predicted Probabilities for the first 10 customers in the test set:")
     for i, prob in enumerate(probs[:10]):
         print(f"Customer {i+1}: {prob:.2f}")'''
