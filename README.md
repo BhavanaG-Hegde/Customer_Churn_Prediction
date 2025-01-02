@@ -1,7 +1,7 @@
 Customer Churn Prediction
 
 Description:
-This project predicts customer churn for a telecom company using machine learning models, specifically Random Forest, Logistic Regression, and Decision Tree. The goal is to predict whether a customer will leave the company based on various factors like age, balance, and membership status.
+This project predicts customer churn for a telecom company using machine learning models, specifically Logistic Regression, Random Forest and Extreme Gradient Boosting. The goal is to predict whether a customer will leave the company based on various factors like age, balance, and membership status.
 
 Table of Contents:
 1. Introduction
@@ -10,7 +10,7 @@ Table of Contents:
 4. Acknowledgements
 
 Introduction:
-This project uses a dataset that includes customer data from a telecom company, such as account balance, age, and activity status, to predict whether a customer will leave the company (churn). The project implements different machine learning models, including Random Forest and Logistic Regression to make accurate predictions.
+This project uses a dataset that includes customer data from a telecom company, such as account balance, age, and activity status, to predict whether a customer will leave the company (churn). The project implements different machine learning models, including Logistic Regression, Random Forest and Extreme Gradient Boosting to make accurate predictions.
 
 Key features of the project:
 - Data preprocessing and feature engineering
@@ -45,7 +45,15 @@ To run the churn prediction models:
      - log_reg_model.pkl
      - scaler.pkl
 
-3. You can modify the dataset or change the features as needed by editing the corresponding Python script (train_random_forest.py or train_logistic_regression.py).
+3. Train the Extreme Gradient Boosting Model:
+   - Execute the following Python script:
+     python train_xgboost.py
+   - The XGBoost model will be trained, and the results (accuracy, ROC-AUC score) will be displayed.
+   - The trained XGBoost model and scaler will be saved to files for future use:
+   - xgboost_model.pkl
+   - scaler_xgb.pkl
+
+4. You can modify the dataset or change the features as needed by editing the corresponding Python script.
 
 Acknowledgements:
 - Scikit-learn: For implementing the machine learning models.
